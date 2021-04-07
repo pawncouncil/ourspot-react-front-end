@@ -146,7 +146,7 @@ class SinglePost extends Component {
           {" ~ "}on {new Date(post.created).toDateString()}
         </p>
         <div className="d-inline-block">
-          <Link to={`/`} className="btn btn-raised btn-outline-dark mr-5">
+          <Link to={`/`} className="btn btn-raised btn-outline-dark ">
             Back to posts
           </Link>
 
@@ -155,13 +155,13 @@ class SinglePost extends Component {
               <>
                 <Link
                   to={`/post/edit/${post._id}`}
-                  className="btn btn-raised btn-outline-dark mr-5"
+                  className="btn btn-raised btn-outline-dark ml-3"
                 >
                   Edit Post
                 </Link>
                 <button
                   onClick={this.deleteConfirmed}
-                  className="btn btn-raised btn-outline-dark"
+                  className="btn btn-raised btn-outline-dark ml-3"
                 >
                   Delete Post
                 </button>
