@@ -9,10 +9,7 @@ const isActive = (history, path) => {
 };
 
 const Menu = ({ history }) => (
-  <nav
-    className="navbar navbar-expand-lg sticky-top "
-    style={{ backgroundColor: "#2d2d2d" }}
-  >
+  <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
     <a className="navbar-brand" style={{ color: "rgb(238, 143, 3)" }} href="/">
       <img
         src={logo}
@@ -69,6 +66,12 @@ const Menu = ({ history }) => (
         </li>
 
         <li className="nav-item">
+          <Link className="nav-link" style={isActive(history, "/")} to="/">
+            Posts
+          </Link>
+        </li>
+
+        <li className="nav-item">
           <Link
             to={`/findpeople`}
             style={isActive(history, `/findpeople`)}
@@ -79,18 +82,12 @@ const Menu = ({ history }) => (
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" style={isActive(history, "/")} to="/">
-            Posts
-          </Link>
-        </li>
-
-        <li className="nav-item">
           <Link
             className="nav-link"
             style={isActive(history, "/users")}
             to="/users"
           >
-            Spots
+            All Spots
           </Link>
         </li>
 

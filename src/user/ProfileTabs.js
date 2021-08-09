@@ -64,15 +64,20 @@ class ProfileTabs extends Component {
               <div key={i}>
                 <div>
                   <Link to={`/post/${post._id}`}>
-                    {/* <img
-                      style={{ borderRadius: "50%", border: "1px solid black" }}
-                      className="float-left mr-2"
-                      height="30px"
-                      width="30px"
-                      onError={(i) => (i.target.src = `${DefaultProfile}`)}
-                      src={`${process.env.REACT_APP_API_URL}/user/photo/${person._id}`}
-                      alt={person.name}
-                    /> */}
+                    {
+                      // <img
+                      //   style={{
+                      //     borderRadius: "50%",
+                      //     border: "1px solid black",
+                      //   }}
+                      //   className="float-left mr-2"
+                      //   height="30px"
+                      //   width="30px"
+                      //   onError={(i) => (i.target.src = `${DefaultProfile}`)}
+                      //   src={`${process.env.REACT_APP_API_URL}/user/photo/${person._id}`}
+                      //   alt={person.name}
+                      // />
+                    }
                     <div>
                       <p className="lead text-dark">{post.title}</p>
                     </div>

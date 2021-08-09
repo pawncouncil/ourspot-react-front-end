@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { signin, authenticate } from "../auth";
 import "../App.css";
 
@@ -102,6 +102,15 @@ class Signin extends Component {
         )}
 
         {this.signinForm(email, password)}
+
+        <p>
+          <small>
+            <Link to="/forgot-password" className="text-muted">
+              {" "}
+              Forgot Password
+            </Link>
+          </small>
+        </p>
       </div>
     );
   }

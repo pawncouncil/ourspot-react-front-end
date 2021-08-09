@@ -107,6 +107,7 @@ class SinglePost extends Component {
           <button
             className="btn btn-raised btn-sm"
             style={{
+              zIndex: "0",
               color: "#50575e",
               backgroundColor: "#ff9800",
               boxShadow: "0 0 10px #ff9800",
