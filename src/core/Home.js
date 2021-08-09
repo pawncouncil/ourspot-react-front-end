@@ -5,7 +5,7 @@ import Posts from "../post/Posts";
 const Home = () => (
   <div>
     <div className="jumbotron">
-      <h2>Home</h2>
+      <h2>Stories</h2>
       <p className="lead">
         Welcome to{" "}
         <span>
@@ -17,7 +17,7 @@ const Home = () => (
             alt=""
           />
         </span>
-        ur Spot!
+        ur Spot! Share your story.
       </p>
     </div>
     <div className="container">

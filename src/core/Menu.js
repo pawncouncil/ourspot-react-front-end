@@ -71,7 +71,7 @@ const Menu = ({ history }) => (
           </Link>
         </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link
             to={`/findpeople`}
             style={isActive(history, `/findpeople`)}
@@ -79,7 +79,7 @@ const Menu = ({ history }) => (
           >
             Find Spots
           </Link>
-        </li>
+        </li> */}
 
         <li className="nav-item">
           <Link
@@ -87,7 +87,7 @@ const Menu = ({ history }) => (
             style={isActive(history, "/users")}
             to="/users"
           >
-            All Spots
+            Spots
           </Link>
         </li>
 
